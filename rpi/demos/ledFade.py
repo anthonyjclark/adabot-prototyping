@@ -3,8 +3,8 @@
 from time import sleep
 import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
-GPIO.setup(32, GPIO.OUT)
-p = GPIO.PWM(32, 100)   # starting frequency
+GPIO.setup(12, GPIO.OUT)
+p = GPIO.PWM(12, 100)   # starting frequency
 p.start(30)         # starting duty cycle
 p.ChangeDutyCycle(80)
 p.ChangeFrequency(1000)
