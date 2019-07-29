@@ -8,9 +8,10 @@
 
     * 2) To view documentation about how python interfaces with rasberry pi follow the link <https://sourceforge.net/p/raspberry-gpio-python/wiki/Examples/ >
 
-    * 3) In the python IDE we need to import **GPIO**
-            * In python type `import RPi.GPIO as GPIO` 
-                * Note if we leave or exit the python program without saving we will need to reimport the above step
+    * 3) We need to import **GPIO** so open a file and type the following at the top: 
+    `import RPi.GPIO as GPIO` 
+    
+            * Note if we leave or exit the python program without saving we will need to reimport the above step
 
 **GPIO PIN LAYOUT**
 
