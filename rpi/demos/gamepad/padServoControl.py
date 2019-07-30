@@ -53,20 +53,11 @@ while True:
                     should_extend = False
 
     if should_extend:
-       # if len(a_string) < 10:
-        if count < 200:
-            a_string = " " + a_string
-            count += 5
         servo_pulse += pulse_increment
         servo_pulse = min(servo_pulse, MAX_SERVO_PULSE)
     elif should_retract:
-       # if len(a_string) > 1:
-        if count > 100:
-            a_string = a_string[1:]
-            count -= 5
         servo_pulse -= pulse_increment
         servo_pulse = max(servo_pulse, MIN_SERVO_PULSE)
-    #print(servo_pulse)
     print((servo_pulse - 100)//5 * "*")
     wiringpi.pwmWrite(18, servo_pulse)
 
